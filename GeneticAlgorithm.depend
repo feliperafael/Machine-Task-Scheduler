@@ -1,0 +1,1314 @@
+# depslib dependency file v1.0
+1494177014 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"SearchEngine.h"
+	"Configures.h"
+	"SimpleParser.h"
+	"Database.h"
+	<omp.h>
+	"TravelingThiefDatabase.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefIndividualBuilder.h"
+	"TravelingThiefParser.h"
+	"TravelingThiefMutation.h"
+	"TravelingThiefCrossover.h"
+	"TravelingThiefLocalSearch.h"
+
+1494111886 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Individual.cpp
+	"Individual.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Individual.h
+	<string>
+	"Configures.h"
+	"Individual.h"
+
+1493225492 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/IndividuoBuilder.cpp
+	"IndividuoBuilder.h"
+
+1493234741 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/IndividuoBuilder.h
+	"Individual.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Parser.cpp
+	"Parser.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Parser.h
+	<string>
+	"Individual.h"
+
+1494178094 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SearchEngine.cpp
+	"SearchEngine.h"
+
+1494113389 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SearchEngine.h
+	<omp.h>
+	"Configures.h"
+	"Individual.h"
+	"IndividualBuilder.h"
+	"IndividualSelector.h"
+	"Parser.h"
+	"PopulationReplacement.h"
+	"Mutation.h"
+	"Crossover.h"
+	"SimpleIndividual.h"
+	"SimpleIndividualBuilder.h"
+	"SimpleMutation.h"
+	"SimpleCrossover.h"
+	"SimpleIndividualSelector.h"
+	"SimpleParser.h"
+	"SimpleReplacement.h"
+	"LocalSearch.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/IndividualSelector.cpp
+	"IndividualSelector.h"
+
+1494111886 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/IndividualSelector.h
+	"Individual.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Crossover.cpp
+	"Crossover.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Crossover.h
+	"Individual.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Mutation.cpp
+	"Mutation.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Mutation.h
+	"Individual.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/PopulationReplacement.cpp
+	"PopulationReplacement.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/PopulationReplacement.h
+	"Individual.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Database.cpp
+	"Database.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Database.h
+	<iostream>
+	<string>
+	<fstream>
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Configures.h
+
+1494111886 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/Configures.cpp
+	"Configures.h"
+
+1493234491 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/IndividualTravelingThief.cpp
+	"IndividualTravelingThief.h"
+
+1493234577 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/IndividualTravelingThief.h
+	"Individual.h"
+
+1494111886 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/IndividualBuilder.h
+	"Individual.h"
+
+1494111886 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/IndividualBuilder.cpp
+	"IndividualBuilder.h"
+
+1493235005 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/IndividualTravelingThiefBuilder.cpp
+	"IndividualTravelingThiefBuilder.h"
+
+1493234970 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/IndividualTravelingThiefBuilder.h
+	"IndividualBuilder.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleMutation.cpp
+	"SimpleMutation.h"
+
+1494111886 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleMutation.h
+	"Mutation.h"
+	"Individual.h"
+	"SimpleIndividual.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleReplacement.cpp
+	"SimpleReplacement.h"
+
+1494111886 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleReplacement.h
+	"PopulationReplacement.h"
+	<algorithm>
+
+1493239114 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/TravelingThiefParser.cpp
+	"TravelingThiefParser.h"
+
+1493239125 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/TravelingThiefParser.h
+	"Individual.h"
+
+1493251665 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/TravelingThiefIndividual.cpp
+	"TravelingThiefIndividual.h"
+
+1493243660 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/TravelingThiefIndividual.h
+	"Individual.h"
+	<iostream>
+
+1493239231 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/TravelingThiefIndividualBuilder.cpp
+	"TravelingThiefIndividualBuilder.h"
+
+1493235816 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/TravelingThiefIndividualBuilder.h
+	"IndividualBuilder.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleIndividualSelector.cpp
+	"SimpleIndividualSelector.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleIndividualSelector.h
+	<stdlib.h>
+	<time.h>
+	"IndividualSelector.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleIndividual.h
+	<iostream>
+	<stdlib.h>
+	"Individual.h"
+
+1494111886 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleIndividualBuilder.h
+	"IndividualBuilder.h"
+	"SimpleIndividual.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleCrossover.h
+	<stdlib.h>
+	"Crossover.h"
+	"SimpleIndividual.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleIndividual.cpp
+	"SimpleIndividual.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleIndividualBuilder.cpp
+	"SimpleIndividualBuilder.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleCrossover.cpp
+	"SimpleCrossover.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleParser.cpp
+	"SimpleParser.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/SimpleParser.h
+	<math.h>
+	"Database.h"
+	"Parser.h"
+	"SimpleIndividual.h"
+
+1494176117 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefIndividual.cpp
+	"TravelingThiefIndividual.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefIndividual.h
+	<iostream>
+	<stdlib.h>
+	<vector>
+	<algorithm>
+	"Individual.h"
+	"TravelingThiefDatabase.h"
+	"City.h"
+	"Item.h"
+
+1494176309 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefIndividualBuilder.cpp
+	"TravelingThiefIndividualBuilder.h"
+
+1494111886 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefIndividualBuilder.h
+	"IndividualBuilder.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+	"Database.h"
+
+1494176825 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefParser.cpp
+	"TravelingThiefParser.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefParser.h
+	"Individual.h"
+	"Parser.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+	"City.h"
+
+1494111886 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefDatabase.cpp
+	"TravelingThiefDatabase.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefDatabase.h
+	<stdio.h>
+	<string.h>
+	<vector>
+	<algorithm>
+	<cctype>
+	"Configures.h"
+	"Database.h"
+	"City.h"
+	"Item.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/City.cpp
+	"City.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/City.h
+	<vector>
+	<iostream>
+	"Item.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/Item.h
+	<iostream>
+
+1493852994 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/Item.cpp
+	"Item.h"
+
+1493743831 source:/home/joao/2017/GeneticAlgorithm/include/City.cpp
+	"City.h"
+
+1493743831 /home/joao/2017/GeneticAlgorithm/include/City.h
+	<vector>
+	<iostream>
+	"Item.h"
+
+1493743831 /home/joao/2017/GeneticAlgorithm/include/Item.h
+	<iostream>
+
+1493743831 source:/home/joao/2017/GeneticAlgorithm/include/Item.cpp
+	"Item.h"
+
+1493743831 source:/home/joao/2017/GeneticAlgorithm/include/TravelingThiefDatabase.cpp
+	"TravelingThiefDatabase.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/include/TravelingThiefDatabase.h
+	<stdio.h>
+	<string.h>
+	<vector>
+	<algorithm>
+	<cctype>
+	"Configures.h"
+	"Database.h"
+	"City.h"
+	"Item.h"
+
+1493743831 /home/joao/2017/GeneticAlgorithm/src/Configures.h
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/Database.h
+	<iostream>
+	<string>
+	<fstream>
+
+1493760627 source:/home/joao/2017/GeneticAlgorithm/include/TravelingThiefIndividual.cpp
+	"TravelingThiefIndividual.h"
+
+1493772538 /home/joao/2017/GeneticAlgorithm/include/TravelingThiefIndividual.h
+	<iostream>
+	<stdlib.h>
+	<vector>
+	<algorithm>
+	"Individual.h"
+	"TravelingThiefDatabase.h"
+	"City.h"
+	"Item.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/Individual.h
+	<string>
+	"Configures.h"
+	"Individual.h"
+
+1493743831 source:/home/joao/2017/GeneticAlgorithm/include/TravelingThiefIndividualBuilder.cpp
+	"TravelingThiefIndividualBuilder.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/include/TravelingThiefIndividualBuilder.h
+	"IndividualBuilder.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+	"Database.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/IndividualBuilder.h
+	"Individual.h"
+
+1493772538 source:/home/joao/2017/GeneticAlgorithm/include/TravelingThiefParser.cpp
+	"TravelingThiefParser.h"
+
+1493743831 /home/joao/2017/GeneticAlgorithm/include/TravelingThiefParser.h
+	"Individual.h"
+	"Parser.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+	"City.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/Parser.h
+	<string>
+	"Individual.h"
+
+1493778565 source:/home/joao/2017/GeneticAlgorithm/main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"SearchEngine.h"
+	"Configures.h"
+	"SimpleParser.h"
+	"Database.h"
+	<omp.h>
+	"TravelingThiefDatabase.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefIndividualBuilder.h"
+	"TravelingThiefParser.h"
+	"TravelingThiefMutation.h"
+	"TravelingThiefCrossover.h"
+	"TravelingThiefLocalSearch.h"
+
+1493743831 /home/joao/2017/GeneticAlgorithm/src/SearchEngine.h
+	<omp.h>
+	"Configures.h"
+	"Individual.h"
+	"IndividualBuilder.h"
+	"IndividualSelector.h"
+	"Parser.h"
+	"PopulationReplacement.h"
+	"Mutation.h"
+	"Crossover.h"
+	"SimpleIndividual.h"
+	"SimpleIndividualBuilder.h"
+	"SimpleMutation.h"
+	"SimpleCrossover.h"
+	"SimpleIndividualSelector.h"
+	"SimpleParser.h"
+	"SimpleReplacement.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/IndividualSelector.h
+	"Individual.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/PopulationReplacement.h
+	"Individual.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/Mutation.h
+	"Individual.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/Crossover.h
+	"Individual.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/SimpleIndividual.h
+	<iostream>
+	<stdlib.h>
+	"Individual.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/SimpleIndividualBuilder.h
+	"IndividualBuilder.h"
+	"SimpleIndividual.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/SimpleMutation.h
+	"Mutation.h"
+	"Individual.h"
+	"SimpleIndividual.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/SimpleCrossover.h
+	<stdlib.h>
+	"Crossover.h"
+	"SimpleIndividual.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/SimpleIndividualSelector.h
+	<stdlib.h>
+	<time.h>
+	"IndividualSelector.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/SimpleParser.h
+	<math.h>
+	"Database.h"
+	"Parser.h"
+	"SimpleIndividual.h"
+
+1493416083 /home/joao/2017/GeneticAlgorithm/src/SimpleReplacement.h
+	"PopulationReplacement.h"
+	<algorithm>
+
+1493743831 source:/home/joao/2017/GeneticAlgorithm/src/Configures.cpp
+	"Configures.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/Crossover.cpp
+	"Crossover.h"
+
+1493743831 source:/home/joao/2017/GeneticAlgorithm/src/Database.cpp
+	"Database.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/Individual.cpp
+	"Individual.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/IndividualBuilder.cpp
+	"IndividualBuilder.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/IndividualSelector.cpp
+	"IndividualSelector.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/Mutation.cpp
+	"Mutation.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/Parser.cpp
+	"Parser.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/PopulationReplacement.cpp
+	"PopulationReplacement.h"
+
+1493743831 source:/home/joao/2017/GeneticAlgorithm/src/SearchEngine.cpp
+	"SearchEngine.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/SimpleCrossover.cpp
+	"SimpleCrossover.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/SimpleIndividual.cpp
+	"SimpleIndividual.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/SimpleIndividualBuilder.cpp
+	"SimpleIndividualBuilder.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/SimpleIndividualSelector.cpp
+	"SimpleIndividualSelector.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/SimpleMutation.cpp
+	"SimpleMutation.h"
+
+1493416083 source:/home/joao/2017/GeneticAlgorithm/src/SimpleParser.cpp
+	"SimpleParser.h"
+
+1493426903 source:/home/joao/2017/GeneticAlgorithm/src/SimpleReplacement.cpp
+	"SimpleReplacement.h"
+
+1493426948 source:/home/joao/2017/GeneticAlgorithm/src/TravelingThiefMutation.cpp
+	"TravelingThiefMutation.h"
+
+1493743831 /home/joao/2017/GeneticAlgorithm/include/TravelingThiefMutation.h
+	<vector>
+	"TravelingThiefIndividual.h"
+	"Mutation.h"
+
+1493770375 source:/home/joao/2017/GeneticAlgorithm/include/TravelingThiefCrossover.cpp
+	"TravelingThiefCrossover.h"
+
+1493769663 /home/joao/2017/GeneticAlgorithm/include/TravelingThiefCrossover.h
+	"TravelingThiefIndividual.h"
+	"Crossover.h"
+
+1493495150 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/City.cpp
+	"City.h"
+
+1493495086 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/City.h
+	<vector>
+	<iostream>
+	"Item.h"
+
+1493495012 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/Item.h
+	<iostream>
+
+1493495039 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/Item.cpp
+	"Item.h"
+
+1493807926 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefCrossover.cpp
+	"TravelingThiefCrossover.h"
+
+1493807926 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefCrossover.h
+	"TravelingThiefIndividual.h"
+	"Crossover.h"
+
+1493807926 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefIndividual.h
+	<iostream>
+	<stdlib.h>
+	<vector>
+	<algorithm>
+	"Individual.h"
+	"TravelingThiefDatabase.h"
+	"City.h"
+	"Item.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Individual.h
+	<string>
+	"Configures.h"
+	"Individual.h"
+
+1493809849 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Configures.h
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefDatabase.h
+	<stdio.h>
+	<string.h>
+	<vector>
+	<algorithm>
+	<cctype>
+	"Configures.h"
+	"Database.h"
+	"City.h"
+	"Item.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Database.h
+	<iostream>
+	<string>
+	<fstream>
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Crossover.h
+	"Individual.h"
+
+1493492330 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefDatabase.cpp
+	"TravelingThiefDatabase.h"
+
+1493807926 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefIndividual.cpp
+	"TravelingThiefIndividual.h"
+
+1493497027 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefIndividualBuilder.cpp
+	"TravelingThiefIndividualBuilder.h"
+
+1493493521 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefIndividualBuilder.h
+	"IndividualBuilder.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+	"Database.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/IndividualBuilder.h
+	"Individual.h"
+
+1493807926 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefParser.cpp
+	"TravelingThiefParser.h"
+
+1493491988 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefParser.h
+	"Individual.h"
+	"Parser.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+	"City.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Parser.h
+	<string>
+	"Individual.h"
+
+1493809987 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"SearchEngine.h"
+	"Configures.h"
+	"SimpleParser.h"
+	"Database.h"
+	<omp.h>
+	"TravelingThiefDatabase.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefIndividualBuilder.h"
+	"TravelingThiefParser.h"
+	"TravelingThiefMutation.h"
+	"TravelingThiefCrossover.h"
+	"TravelingThiefLocalSearch.h"
+
+1493809622 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SearchEngine.h
+	<omp.h>
+	"Configures.h"
+	"Individual.h"
+	"IndividualBuilder.h"
+	"IndividualSelector.h"
+	"Parser.h"
+	"PopulationReplacement.h"
+	"Mutation.h"
+	"Crossover.h"
+	"SimpleIndividual.h"
+	"SimpleIndividualBuilder.h"
+	"SimpleMutation.h"
+	"SimpleCrossover.h"
+	"SimpleIndividualSelector.h"
+	"SimpleParser.h"
+	"SimpleReplacement.h"
+	"LocalSearch.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/IndividualSelector.h
+	"Individual.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/PopulationReplacement.h
+	"Individual.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Mutation.h
+	"Individual.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividual.h
+	<iostream>
+	<stdlib.h>
+	"Individual.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividualBuilder.h
+	"IndividualBuilder.h"
+	"SimpleIndividual.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleMutation.h
+	"Mutation.h"
+	"Individual.h"
+	"SimpleIndividual.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleCrossover.h
+	<stdlib.h>
+	"Crossover.h"
+	"SimpleIndividual.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividualSelector.h
+	<stdlib.h>
+	<time.h>
+	"IndividualSelector.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleParser.h
+	<math.h>
+	"Database.h"
+	"Parser.h"
+	"SimpleIndividual.h"
+
+1493486663 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleReplacement.h
+	"PopulationReplacement.h"
+	<algorithm>
+
+1493577764 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefMutation.h
+	<vector>
+	"TravelingThiefIndividual.h"
+	"Mutation.h"
+
+1493809859 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Configures.cpp
+	"Configures.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Crossover.cpp
+	"Crossover.h"
+
+1493722934 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Database.cpp
+	"Database.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Individual.cpp
+	"Individual.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/IndividualBuilder.cpp
+	"IndividualBuilder.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/IndividualSelector.cpp
+	"IndividualSelector.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Mutation.cpp
+	"Mutation.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/Parser.cpp
+	"Parser.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/PopulationReplacement.cpp
+	"PopulationReplacement.h"
+
+1493809955 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SearchEngine.cpp
+	"SearchEngine.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleCrossover.cpp
+	"SimpleCrossover.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividual.cpp
+	"SimpleIndividual.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividualBuilder.cpp
+	"SimpleIndividualBuilder.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividualSelector.cpp
+	"SimpleIndividualSelector.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleMutation.cpp
+	"SimpleMutation.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleParser.cpp
+	"SimpleParser.h"
+
+1493599877 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/SimpleReplacement.cpp
+	"SimpleReplacement.h"
+
+1493486663 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/TravelingThiefMutation.cpp
+	"TravelingThiefMutation.h"
+
+1493807926 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefMutation.cpp
+	"TravelingThiefMutation.h"
+
+1493769920 source:/home/joao/2017/GeneticAlgorithm/include/TravelingThiefMutation.cpp
+	"TravelingThiefMutation.h"
+
+1493773392 source:/home/joao/2017/GeneticAlgorithm/src/LocalSearch.cpp
+	"LocalSearch.h"
+
+1493778511 /home/joao/2017/GeneticAlgorithm/src/LocalSearch.h
+	"Individual.h"
+	"Parser.h"
+
+1493778632 source:/home/joao/2017/GeneticAlgorithm/src/TravelingThiefLocalSearch.cpp
+	"TravelingThiefLocalSearch.h"
+
+1493778552 /home/joao/2017/GeneticAlgorithm/include/TravelingThiefLocalSearch.h
+	"LocalSearch.h"
+	"TravelingThiefIndividual.h"
+
+1493807926 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefLocalSearch.h
+	"LocalSearch.h"
+	"TravelingThiefIndividual.h"
+
+1493809367 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/LocalSearch.h
+	"Individual.h"
+	"Parser.h"
+
+1493807926 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/LocalSearch.cpp
+	"LocalSearch.h"
+
+1493807926 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/src/TravelingThiefLocalSearch.cpp
+	"TravelingThiefLocalSearch.h"
+
+1493807926 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefLocalSearch.cpp
+	"TravelingThiefLocalSearch.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/City.cpp
+	"City.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/City.h
+	<vector>
+	<iostream>
+	"Item.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/Item.h
+	<iostream>
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/Item.cpp
+	"Item.h"
+
+1493852090 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefCrossover.cpp
+	"TravelingThiefCrossover.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefCrossover.h
+	"TravelingThiefIndividual.h"
+	"Crossover.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefIndividual.h
+	<iostream>
+	<stdlib.h>
+	<vector>
+	<algorithm>
+	"Individual.h"
+	"TravelingThiefDatabase.h"
+	"City.h"
+	"Item.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Individual.h
+	<string>
+	"Configures.h"
+	"Individual.h"
+
+1493851984 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Configures.h
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefDatabase.h
+	<stdio.h>
+	<string.h>
+	<vector>
+	<algorithm>
+	<cctype>
+	"Configures.h"
+	"Database.h"
+	"City.h"
+	"Item.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Database.h
+	<iostream>
+	<string>
+	<fstream>
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Crossover.h
+	"Individual.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefDatabase.cpp
+	"TravelingThiefDatabase.h"
+
+1493852350 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefIndividual.cpp
+	"TravelingThiefIndividual.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefIndividualBuilder.cpp
+	"TravelingThiefIndividualBuilder.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefIndividualBuilder.h
+	"IndividualBuilder.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+	"Database.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/IndividualBuilder.h
+	"Individual.h"
+
+1493851758 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefLocalSearch.cpp
+	"TravelingThiefLocalSearch.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefLocalSearch.h
+	"LocalSearch.h"
+	"TravelingThiefIndividual.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/LocalSearch.h
+	"Individual.h"
+	"Parser.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Parser.h
+	<string>
+	"Individual.h"
+
+1493841521 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefMutation.cpp
+	"TravelingThiefMutation.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefMutation.h
+	<vector>
+	"TravelingThiefIndividual.h"
+	"Mutation.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Mutation.h
+	"Individual.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefParser.cpp
+	"TravelingThiefParser.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/include/TravelingThiefParser.h
+	"Individual.h"
+	"Parser.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+	"City.h"
+
+1493852090 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"SearchEngine.h"
+	"Configures.h"
+	"SimpleParser.h"
+	"Database.h"
+	<omp.h>
+	"TravelingThiefDatabase.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefIndividualBuilder.h"
+	"TravelingThiefParser.h"
+	"TravelingThiefMutation.h"
+	"TravelingThiefCrossover.h"
+	"TravelingThiefLocalSearch.h"
+
+1493824080 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SearchEngine.h
+	<omp.h>
+	"Configures.h"
+	"Individual.h"
+	"IndividualBuilder.h"
+	"IndividualSelector.h"
+	"Parser.h"
+	"PopulationReplacement.h"
+	"Mutation.h"
+	"Crossover.h"
+	"SimpleIndividual.h"
+	"SimpleIndividualBuilder.h"
+	"SimpleMutation.h"
+	"SimpleCrossover.h"
+	"SimpleIndividualSelector.h"
+	"SimpleParser.h"
+	"SimpleReplacement.h"
+	"LocalSearch.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/IndividualSelector.h
+	"Individual.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/PopulationReplacement.h
+	"Individual.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividual.h
+	<iostream>
+	<stdlib.h>
+	"Individual.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividualBuilder.h
+	"IndividualBuilder.h"
+	"SimpleIndividual.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleMutation.h
+	"Mutation.h"
+	"Individual.h"
+	"SimpleIndividual.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleCrossover.h
+	<stdlib.h>
+	"Crossover.h"
+	"SimpleIndividual.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividualSelector.h
+	<stdlib.h>
+	<time.h>
+	"IndividualSelector.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleParser.h
+	<math.h>
+	"Database.h"
+	"Parser.h"
+	"SimpleIndividual.h"
+
+1493822570 /home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleReplacement.h
+	"PopulationReplacement.h"
+	<algorithm>
+
+1493823374 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Configures.cpp
+	"Configures.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Crossover.cpp
+	"Crossover.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Database.cpp
+	"Database.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Individual.cpp
+	"Individual.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/IndividualBuilder.cpp
+	"IndividualBuilder.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/IndividualSelector.cpp
+	"IndividualSelector.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/LocalSearch.cpp
+	"LocalSearch.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Mutation.cpp
+	"Mutation.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/Parser.cpp
+	"Parser.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/PopulationReplacement.cpp
+	"PopulationReplacement.h"
+
+1493851758 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SearchEngine.cpp
+	"SearchEngine.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleCrossover.cpp
+	"SimpleCrossover.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividual.cpp
+	"SimpleIndividual.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividualBuilder.cpp
+	"SimpleIndividualBuilder.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleIndividualSelector.cpp
+	"SimpleIndividualSelector.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleMutation.cpp
+	"SimpleMutation.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleParser.cpp
+	"SimpleParser.h"
+
+1493822570 source:/home/joao/2017/GeneticAlgorithm/GeneticAlgorithm/src/SimpleReplacement.cpp
+	"SimpleReplacement.h"
+
+1494175965 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefMutation.cpp
+	"TravelingThiefMutation.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefMutation.h
+	<vector>
+	"TravelingThiefIndividual.h"
+	"Mutation.h"
+
+1494111887 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/LocalSearch.cpp
+	"LocalSearch.h"
+
+1494111886 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/src/LocalSearch.h
+	"Individual.h"
+	"Parser.h"
+
+1494176062 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefCrossover.cpp
+	"TravelingThiefCrossover.h"
+
+1494111885 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefCrossover.h
+	"TravelingThiefIndividual.h"
+	"Crossover.h"
+
+1494177458 source:/home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefLocalSearch.cpp
+	"TravelingThiefLocalSearch.h"
+
+1494111887 /home/felipe/Documentos/codelobcks/GeneticAlgorithm/include/TravelingThiefLocalSearch.h
+	"LocalSearch.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/City.cpp
+	"City.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/City.h
+	<vector>
+	<iostream>
+	"Item.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/Item.h
+	<iostream>
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/Item.cpp
+	"Item.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefCrossover.cpp
+	"TravelingThiefCrossover.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefCrossover.h
+	"TravelingThiefIndividual.h"
+	"Crossover.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefIndividual.h
+	<iostream>
+	<stdlib.h>
+	<vector>
+	<algorithm>
+	"Individual.h"
+	"TravelingThiefDatabase.h"
+	"City.h"
+	"Item.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Individual.h
+	<string>
+	"Configures.h"
+	"Individual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Configures.h
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefDatabase.h
+	<stdio.h>
+	<string.h>
+	<vector>
+	<algorithm>
+	<cctype>
+	"Configures.h"
+	"Database.h"
+	"City.h"
+	"Item.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Database.h
+	<iostream>
+	<string>
+	<fstream>
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Crossover.h
+	"Individual.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefDatabase.cpp
+	"TravelingThiefDatabase.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefIndividual.cpp
+	"TravelingThiefIndividual.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefIndividualBuilder.cpp
+	"TravelingThiefIndividualBuilder.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefIndividualBuilder.h
+	"IndividualBuilder.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+	"Database.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/IndividualBuilder.h
+	"Individual.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefLocalSearch.cpp
+	"TravelingThiefLocalSearch.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefLocalSearch.h
+	"LocalSearch.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/LocalSearch.h
+	"Individual.h"
+	"Parser.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Parser.h
+	<string>
+	"Individual.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefMutation.cpp
+	"TravelingThiefMutation.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefMutation.h
+	<vector>
+	"TravelingThiefIndividual.h"
+	"Mutation.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Mutation.h
+	"Individual.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefParser.cpp
+	"TravelingThiefParser.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/TravelingThiefParser.h
+	"Individual.h"
+	"Parser.h"
+	"TravelingThiefIndividual.h"
+	"TravelingThiefDatabase.h"
+	"City.h"
+
+1496686915 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/Machine.cpp
+	"Machine.h"
+
+1496686915 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/Machine.h
+
+1496686976 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/MachineTaskScheduling.cpp
+	"MachineTaskScheduling.h"
+
+1496686975 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/MachineTaskScheduling.h
+
+1496687000 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/MachineTaskSchedulingIndividual.cpp
+	"MachineTaskSchedulingIndividual.h"
+
+1496687000 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/MachineTaskSchedulingIndividual.h
+
+1496686891 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/Task.cpp
+	"Task.h"
+
+1496686891 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/Task.h
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Configures.cpp
+	"Configures.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Crossover.cpp
+	"Crossover.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Database.cpp
+	"Database.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Individual.cpp
+	"Individual.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/IndividualBuilder.cpp
+	"IndividualBuilder.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/IndividualSelector.cpp
+	"IndividualSelector.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/IndividualSelector.h
+	"Individual.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/LocalSearch.cpp
+	"LocalSearch.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Mutation.cpp
+	"Mutation.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/Parser.cpp
+	"Parser.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/PopulationReplacement.cpp
+	"PopulationReplacement.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/PopulationReplacement.h
+	"Individual.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SearchEngine.cpp
+	"SearchEngine.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SearchEngine.h
+	<omp.h>
+	"Configures.h"
+	"Individual.h"
+	"IndividualBuilder.h"
+	"IndividualSelector.h"
+	"Parser.h"
+	"PopulationReplacement.h"
+	"Mutation.h"
+	"Crossover.h"
+	"SimpleIndividual.h"
+	"SimpleIndividualBuilder.h"
+	"SimpleMutation.h"
+	"SimpleCrossover.h"
+	"SimpleIndividualSelector.h"
+	"SimpleParser.h"
+	"SimpleReplacement.h"
+	"LocalSearch.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleIndividual.h
+	<iostream>
+	<stdlib.h>
+	"Individual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleIndividualBuilder.h
+	"IndividualBuilder.h"
+	"SimpleIndividual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleMutation.h
+	"Mutation.h"
+	"Individual.h"
+	"SimpleIndividual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleCrossover.h
+	<stdlib.h>
+	"Crossover.h"
+	"SimpleIndividual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleIndividualSelector.h
+	<stdlib.h>
+	<time.h>
+	"IndividualSelector.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleParser.h
+	<math.h>
+	"Database.h"
+	"Parser.h"
+	"SimpleIndividual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleReplacement.h
+	"PopulationReplacement.h"
+	<algorithm>
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleCrossover.cpp
+	"SimpleCrossover.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleIndividual.cpp
+	"SimpleIndividual.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleIndividualBuilder.cpp
+	"SimpleIndividualBuilder.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleIndividualSelector.cpp
+	"SimpleIndividualSelector.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleMutation.cpp
+	"SimpleMutation.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleParser.cpp
+	"SimpleParser.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/src/SimpleReplacement.cpp
+	"SimpleReplacement.h"
+
+1496687901 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/MachineTaskSchedulingDatabase.cpp
+	"MachineTaskSchedulingDatabase.h"
+
+1496688648 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/MachineTaskSchedulingDatabase.h
+	"Database.h"
+
+1496687773 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/MachineTaskSchedulingIndividualBuilder.cpp
+	"MachineTaskSchedulingIndividualBuilder.h"
+
+1496687773 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/Scheduling/MachineTaskSchedulingIndividualBuilder.h
+
+1496692414 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"SearchEngine.h"
+	"Configures.h"
+	"SimpleParser.h"
+	"Database.h"
+	<omp.h>
+	"MachineTaskSchedulingDatabase.h"
+	"MachineTaskSchedulingIndividual.h"
+	"MachineTaskSchedulingIndividualBuilder.h"
+	"MachineTaskSchedulingParser.h"
+
+1496687016 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/MachineTaskSchedulingParser.h
+
+1496686915 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/Machine.cpp
+	"Machine.h"
+
+1496686915 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/Machine.h
+
+1496686976 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/MachineTaskScheduling.cpp
+	"MachineTaskScheduling.h"
+
+1496686975 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/MachineTaskScheduling.h
+
+1496687000 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/MachineTaskSchedulingIndividual.cpp
+	"MachineTaskSchedulingIndividual.h"
+
+1496687000 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/MachineTaskSchedulingIndividual.h
+
+1496687773 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/MachineTaskSchedulingIndividualBuilder.cpp
+	"MachineTaskSchedulingIndividualBuilder.h"
+
+1496687773 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/MachineTaskSchedulingIndividualBuilder.h
+
+1496686891 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/Task.cpp
+	"Task.h"
+
+1496686891 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/Task.h
+
+1496691312 /home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/MachineTaskSchedulingDatabase.h
+	"Database.h"
+
+1496692260 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/MachineTaskSchedulingDatabase.cpp
+	"MachineTaskSchedulingDatabase.h"
+

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="GeneticAlgorithm" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/GeneticAlgorithm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="input/eil51_n150_uncorr_10.ttp 10 10 " />
+				<Compiler>
+					<Add option="-O3" />
+					<Add option="-std=c++14" />
+					<Add option="-g" />
+					<Add directory="src" />
+					<Add directory="include" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/GeneticAlgorithm" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option parameters="input/m3n9.txt 10 10" />
+				<Compiler>
+					<Add option="-std=c++11" />
+					<Add option="-fopenmp" />
+					<Add directory="src" />
+					<Add directory="include" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-O3" />
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="include/Machine.cpp" />
+		<Unit filename="include/Machine.h" />
+		<Unit filename="include/MachineTaskScheduling.cpp" />
+		<Unit filename="include/MachineTaskScheduling.h" />
+		<Unit filename="include/MachineTaskSchedulingDatabase.cpp" />
+		<Unit filename="include/MachineTaskSchedulingDatabase.h" />
+		<Unit filename="include/MachineTaskSchedulingIndividual.cpp" />
+		<Unit filename="include/MachineTaskSchedulingIndividual.h" />
+		<Unit filename="include/MachineTaskSchedulingIndividualBuilder.cpp" />
+		<Unit filename="include/MachineTaskSchedulingIndividualBuilder.h" />
+		<Unit filename="include/MachineTaskSchedulingParser.h" />
+		<Unit filename="include/Task.cpp" />
+		<Unit filename="include/Task.h" />
+		<Unit filename="main.cpp" />
+		<Unit filename="src/Configures.cpp" />
+		<Unit filename="src/Configures.h" />
+		<Unit filename="src/Crossover.cpp" />
+		<Unit filename="src/Crossover.h" />
+		<Unit filename="src/Database.cpp" />
+		<Unit filename="src/Database.h" />
+		<Unit filename="src/Individual.cpp" />
+		<Unit filename="src/Individual.h" />
+		<Unit filename="src/IndividualBuilder.cpp" />
+		<Unit filename="src/IndividualBuilder.h" />
+		<Unit filename="src/IndividualSelector.cpp" />
+		<Unit filename="src/IndividualSelector.h" />
+		<Unit filename="src/LocalSearch.cpp" />
+		<Unit filename="src/LocalSearch.h" />
+		<Unit filename="src/Mutation.cpp" />
+		<Unit filename="src/Mutation.h" />
+		<Unit filename="src/Parser.cpp" />
+		<Unit filename="src/Parser.h" />
+		<Unit filename="src/PopulationReplacement.cpp" />
+		<Unit filename="src/PopulationReplacement.h" />
+		<Unit filename="src/SearchEngine.cpp" />
+		<Unit filename="src/SearchEngine.h" />
+		<Unit filename="src/SimpleCrossover.cpp" />
+		<Unit filename="src/SimpleCrossover.h" />
+		<Unit filename="src/SimpleIndividual.cpp" />
+		<Unit filename="src/SimpleIndividual.h" />
+		<Unit filename="src/SimpleIndividualBuilder.cpp" />
+		<Unit filename="src/SimpleIndividualBuilder.h" />
+		<Unit filename="src/SimpleIndividualSelector.cpp" />
+		<Unit filename="src/SimpleIndividualSelector.h" />
+		<Unit filename="src/SimpleMutation.cpp" />
+		<Unit filename="src/SimpleMutation.h" />
+		<Unit filename="src/SimpleParser.cpp" />
+		<Unit filename="src/SimpleParser.h" />
+		<Unit filename="src/SimpleReplacement.cpp" />
+		<Unit filename="src/SimpleReplacement.h" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
