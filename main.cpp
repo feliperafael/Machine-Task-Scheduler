@@ -39,7 +39,6 @@ int main(int argc, char * argv[]) {
     //Create a problem database and load the input file.
     Database * database = new MachineTaskSchedulingDatabase();
     database->loadBase(argv[1]); // argv[1] is the path to the input file
-    database->print();
 
 //    //Create an evaluator of the problem
     Parser * parser = new MachineTaskSchedulingParser();
@@ -48,7 +47,7 @@ int main(int argc, char * argv[]) {
 
     //Define the individual generator that returns an individual type of problem specific
     MachineTaskSchedulingIndividualBuilder * machineTaskSchedulingIndividualBuilder = new MachineTaskSchedulingIndividualBuilder(database);
-
+    auto i = machineTaskSchedulingIndividualBuilder->generateIndividuo();
 //    //Instantiated a local search
 //    TravelingThiefLocalSearch* ls = new TravelingThiefLocalSearch();
 //    ls->setParser(travelingthiefparser);

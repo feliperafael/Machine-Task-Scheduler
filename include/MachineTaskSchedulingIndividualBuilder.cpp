@@ -7,7 +7,7 @@ MachineTaskSchedulingIndividualBuilder::MachineTaskSchedulingIndividualBuilder(D
 
 Individual * MachineTaskSchedulingIndividualBuilder::generateIndividuo(){
     MachineTaskSchedulingIndividual * i = new MachineTaskSchedulingIndividual();
-    i->Create(database);
+    i->create(database);
     return i;
 }
 

@@ -1529,3 +1529,221 @@
 	"MachineTaskSchedulingIndividual.h"
 	"Crossover.h"
 
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/include/Machine.cpp
+	"Machine.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/include/Machine.h
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskScheduling.cpp
+	"MachineTaskScheduling.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskScheduling.h
+
+1496774706 source:/home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingCrossover.cpp
+	"MachineTaskSchedulingCrossover.h"
+
+1496774706 /home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingCrossover.h
+	"MachineTaskSchedulingIndividual.h"
+	"Crossover.h"
+
+1496780335 /home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingIndividual.h
+	"Individual.h"
+	"MachineTaskSchedulingDatabase.h"
+	<vector>
+	<algorithm>
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/Individual.h
+	<string>
+	"Configures.h"
+	"Individual.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/Configures.h
+
+1496774706 /home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingDatabase.h
+	"Database.h"
+	<vector>
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/Database.h
+	<iostream>
+	<string>
+	<fstream>
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/Crossover.h
+	"Individual.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingDatabase.cpp
+	"MachineTaskSchedulingDatabase.h"
+
+1496775697 source:/home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingIndividualBuilder.cpp
+	"MachineTaskSchedulingIndividualBuilder.h"
+
+1496774706 /home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingIndividualBuilder.h
+	"IndividualBuilder.h"
+	"Database.h"
+	"MachineTaskSchedulingIndividual.h"
+	"MachineTaskSchedulingDatabase.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/IndividualBuilder.h
+	"Individual.h"
+
+1496774706 source:/home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingMutation.cpp
+	"MachineTaskSchedulingMutation.h"
+
+1496774706 /home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingMutation.h
+	"MachineTaskSchedulingIndividual.h"
+	"Mutation.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/Mutation.h
+	"Individual.h"
+
+1496774706 source:/home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingParser.cpp
+	"MachineTaskSchedulingParser.h"
+
+1496774706 /home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingParser.h
+	"Parser.h"
+	"MachineTaskSchedulingIndividual.h"
+	"MachineTaskSchedulingDatabase.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/Parser.h
+	<string>
+	"Individual.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/include/Task.cpp
+	"Task.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/include/Task.h
+
+1496780795 source:/home/felipe/Documentos/github/MachineTaskScheduler/main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"SearchEngine.h"
+	"Configures.h"
+	"SimpleParser.h"
+	"Database.h"
+	<omp.h>
+	"MachineTaskSchedulingDatabase.h"
+	"MachineTaskSchedulingIndividual.h"
+	"MachineTaskSchedulingIndividualBuilder.h"
+	"MachineTaskSchedulingParser.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/SearchEngine.h
+	<omp.h>
+	"Configures.h"
+	"Individual.h"
+	"IndividualBuilder.h"
+	"IndividualSelector.h"
+	"Parser.h"
+	"PopulationReplacement.h"
+	"Mutation.h"
+	"Crossover.h"
+	"SimpleIndividual.h"
+	"SimpleIndividualBuilder.h"
+	"SimpleMutation.h"
+	"SimpleCrossover.h"
+	"SimpleIndividualSelector.h"
+	"SimpleParser.h"
+	"SimpleReplacement.h"
+	"LocalSearch.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/IndividualSelector.h
+	"Individual.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/PopulationReplacement.h
+	"Individual.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleIndividual.h
+	<iostream>
+	<stdlib.h>
+	"Individual.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleIndividualBuilder.h
+	"IndividualBuilder.h"
+	"SimpleIndividual.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleMutation.h
+	"Mutation.h"
+	"Individual.h"
+	"SimpleIndividual.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleCrossover.h
+	<stdlib.h>
+	"Crossover.h"
+	"SimpleIndividual.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleIndividualSelector.h
+	<stdlib.h>
+	<time.h>
+	"IndividualSelector.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleParser.h
+	<math.h>
+	"Database.h"
+	"Parser.h"
+	"SimpleIndividual.h"
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleReplacement.h
+	"PopulationReplacement.h"
+	<algorithm>
+
+1496711473 /home/felipe/Documentos/github/MachineTaskScheduler/src/LocalSearch.h
+	"Individual.h"
+	"Parser.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/Configures.cpp
+	"Configures.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/Crossover.cpp
+	"Crossover.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/Database.cpp
+	"Database.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/Individual.cpp
+	"Individual.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/IndividualBuilder.cpp
+	"IndividualBuilder.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/IndividualSelector.cpp
+	"IndividualSelector.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/LocalSearch.cpp
+	"LocalSearch.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/Mutation.cpp
+	"Mutation.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/Parser.cpp
+	"Parser.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/PopulationReplacement.cpp
+	"PopulationReplacement.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/SearchEngine.cpp
+	"SearchEngine.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleCrossover.cpp
+	"SimpleCrossover.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleIndividual.cpp
+	"SimpleIndividual.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleIndividualBuilder.cpp
+	"SimpleIndividualBuilder.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleIndividualSelector.cpp
+	"SimpleIndividualSelector.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleMutation.cpp
+	"SimpleMutation.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleParser.cpp
+	"SimpleParser.h"
+
+1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleReplacement.cpp
+	"SimpleReplacement.h"
+
+1496781333 source:/home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingIndividual.cpp
+	"MachineTaskSchedulingIndividual.h"
+

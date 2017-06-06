@@ -4,6 +4,7 @@
 #include "Individual.h"
 #include "MachineTaskSchedulingDatabase.h"
 #include <vector>
+#include <algorithm>
 
 class MachineTaskSchedulingIndividual : public Individual
 {
@@ -13,7 +14,8 @@ class MachineTaskSchedulingIndividual : public Individual
 
         virtual string nameIndividual();
         virtual Individual* clone();
-        void Create(Database* data);
+        void create(Database* data);
+        void calculateTimes(MachineTaskSchedulingDatabase *database);
         void print();
 
         vector<int>* machinesAndTasksIndex;
