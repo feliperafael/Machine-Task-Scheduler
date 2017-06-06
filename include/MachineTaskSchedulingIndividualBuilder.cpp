@@ -1,8 +1,18 @@
 #include "MachineTaskSchedulingIndividualBuilder.h"
 
-MachineTaskSchedulingIndividualBuilder::MachineTaskSchedulingIndividualBuilder()
+MachineTaskSchedulingIndividualBuilder::MachineTaskSchedulingIndividualBuilder(Database* data)
 {
-    //ctor
+    this->database = dynamic_cast<MachineTaskSchedulingDatabase*>(data);
+}
+
+Individual * MachineTaskSchedulingIndividualBuilder::generateIndividuo(){
+    MachineTaskSchedulingIndividual * i = new MachineTaskSchedulingIndividual();
+    i->Create(database);
+    return i;
+}
+
+string MachineTaskSchedulingIndividualBuilder::nameIndividuo(){
+    return "MachineTaskSchedulingIndividualBuilder";
 }
 
 MachineTaskSchedulingIndividualBuilder::~MachineTaskSchedulingIndividualBuilder()

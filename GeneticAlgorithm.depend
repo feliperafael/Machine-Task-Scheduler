@@ -1312,3 +1312,220 @@
 1496692260 source:/home/joao/2017/TrabalhoInteligenciaComputacional/GeneticAlgorithm/include/MachineTaskSchedulingDatabase.cpp
 	"MachineTaskSchedulingDatabase.h"
 
+1496686915 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/Machine.cpp
+	"Machine.h"
+
+1496686915 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/Machine.h
+
+1496686976 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskScheduling.cpp
+	"MachineTaskScheduling.h"
+
+1496686975 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskScheduling.h
+
+1496692449 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingDatabase.cpp
+	"MachineTaskSchedulingDatabase.h"
+
+1496769054 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingDatabase.h
+	"Database.h"
+	<vector>
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Database.h
+	<iostream>
+	<string>
+	<fstream>
+
+1496773482 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingIndividualBuilder.cpp
+	"MachineTaskSchedulingIndividualBuilder.h"
+
+1496773362 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingIndividualBuilder.h
+	"IndividualBuilder.h"
+	"Database.h"
+	"MachineTaskSchedulingIndividual.h"
+	"MachineTaskSchedulingDatabase.h"
+
+1496686891 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/Task.cpp
+	"Task.h"
+
+1496686891 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/Task.h
+
+1496773695 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/main.cpp
+	<iostream>
+	<stdlib.h>
+	<time.h>
+	"SearchEngine.h"
+	"Configures.h"
+	"SimpleParser.h"
+	"Database.h"
+	<omp.h>
+	"MachineTaskSchedulingDatabase.h"
+	"MachineTaskSchedulingIndividual.h"
+	"MachineTaskSchedulingIndividualBuilder.h"
+	"MachineTaskSchedulingParser.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SearchEngine.h
+	<omp.h>
+	"Configures.h"
+	"Individual.h"
+	"IndividualBuilder.h"
+	"IndividualSelector.h"
+	"Parser.h"
+	"PopulationReplacement.h"
+	"Mutation.h"
+	"Crossover.h"
+	"SimpleIndividual.h"
+	"SimpleIndividualBuilder.h"
+	"SimpleMutation.h"
+	"SimpleCrossover.h"
+	"SimpleIndividualSelector.h"
+	"SimpleParser.h"
+	"SimpleReplacement.h"
+	"LocalSearch.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Configures.h
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Individual.h
+	<string>
+	"Configures.h"
+	"Individual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/IndividualBuilder.h
+	"Individual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/IndividualSelector.h
+	"Individual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Parser.h
+	<string>
+	"Individual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/PopulationReplacement.h
+	"Individual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Mutation.h
+	"Individual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Crossover.h
+	"Individual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleIndividual.h
+	<iostream>
+	<stdlib.h>
+	"Individual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleIndividualBuilder.h
+	"IndividualBuilder.h"
+	"SimpleIndividual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleMutation.h
+	"Mutation.h"
+	"Individual.h"
+	"SimpleIndividual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleCrossover.h
+	<stdlib.h>
+	"Crossover.h"
+	"SimpleIndividual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleIndividualSelector.h
+	<stdlib.h>
+	<time.h>
+	"IndividualSelector.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleParser.h
+	<math.h>
+	"Database.h"
+	"Parser.h"
+	"SimpleIndividual.h"
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleReplacement.h
+	"PopulationReplacement.h"
+	<algorithm>
+
+1496686786 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/LocalSearch.h
+	"Individual.h"
+	"Parser.h"
+
+1496773944 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingIndividual.h
+	"Individual.h"
+	"MachineTaskSchedulingDatabase.h"
+	<vector>
+
+1496772123 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingParser.h
+	"Parser.h"
+	"MachineTaskSchedulingIndividual.h"
+	"MachineTaskSchedulingDatabase.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Configures.cpp
+	"Configures.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Crossover.cpp
+	"Crossover.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Database.cpp
+	"Database.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Individual.cpp
+	"Individual.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/IndividualBuilder.cpp
+	"IndividualBuilder.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/IndividualSelector.cpp
+	"IndividualSelector.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/LocalSearch.cpp
+	"LocalSearch.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Mutation.cpp
+	"Mutation.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/Parser.cpp
+	"Parser.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/PopulationReplacement.cpp
+	"PopulationReplacement.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SearchEngine.cpp
+	"SearchEngine.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleCrossover.cpp
+	"SimpleCrossover.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleIndividual.cpp
+	"SimpleIndividual.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleIndividualBuilder.cpp
+	"SimpleIndividualBuilder.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleIndividualSelector.cpp
+	"SimpleIndividualSelector.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleMutation.cpp
+	"SimpleMutation.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleParser.cpp
+	"SimpleParser.h"
+
+1496686786 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/src/SimpleReplacement.cpp
+	"SimpleReplacement.h"
+
+1496772475 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingIndividual.cpp
+	"MachineTaskSchedulingIndividual.h"
+
+1496773139 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingParser.cpp
+	"MachineTaskSchedulingParser.h"
+
+1496773782 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingMutation.cpp
+	"MachineTaskSchedulingMutation.h"
+
+1496773769 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingMutation.h
+	"MachineTaskSchedulingIndividual.h"
+	"Mutation.h"
+
+1496773726 source:/home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingCrossover.cpp
+	"MachineTaskSchedulingCrossover.h"
+
+1496773695 /home/joao/2017/TrabalhoInteligenciaComputacional/git/MachineTaskScheduler/include/MachineTaskSchedulingCrossover.h
+	"MachineTaskSchedulingIndividual.h"
+	"Crossover.h"
+

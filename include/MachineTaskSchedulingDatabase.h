@@ -2,6 +2,7 @@
 #define MACHINETASKSCHEDULINGDATABASE_H
 
 #include "Database.h"
+#include <vector>
 
 class MachineTaskSchedulingDatabase : public Database
 {

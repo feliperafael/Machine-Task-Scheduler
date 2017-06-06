@@ -46,12 +46,17 @@
 		<Unit filename="include/Machine.h" />
 		<Unit filename="include/MachineTaskScheduling.cpp" />
 		<Unit filename="include/MachineTaskScheduling.h" />
+		<Unit filename="include/MachineTaskSchedulingCrossover.cpp" />
+		<Unit filename="include/MachineTaskSchedulingCrossover.h" />
 		<Unit filename="include/MachineTaskSchedulingDatabase.cpp" />
 		<Unit filename="include/MachineTaskSchedulingDatabase.h" />
 		<Unit filename="include/MachineTaskSchedulingIndividual.cpp" />
 		<Unit filename="include/MachineTaskSchedulingIndividual.h" />
 		<Unit filename="include/MachineTaskSchedulingIndividualBuilder.cpp" />
 		<Unit filename="include/MachineTaskSchedulingIndividualBuilder.h" />
+		<Unit filename="include/MachineTaskSchedulingMutation.cpp" />
+		<Unit filename="include/MachineTaskSchedulingMutation.h" />
+		<Unit filename="include/MachineTaskSchedulingParser.cpp" />
 		<Unit filename="include/MachineTaskSchedulingParser.h" />
 		<Unit filename="include/Task.cpp" />
 		<Unit filename="include/Task.h" />

@@ -40,17 +40,15 @@ int main(int argc, char * argv[]) {
     Database * database = new MachineTaskSchedulingDatabase();
     database->loadBase(argv[1]); // argv[1] is the path to the input file
     database->print();
-//    conf->popSize = 2*conf->DIMENSION;
 
 //    //Create an evaluator of the problem
-//    Parser * parser = new TravelingThiefParser();
-//    TravelingThiefParser * travelingthiefparser = dynamic_cast<TravelingThiefParser*>(parser);
-//    travelingthiefparser->setDatabase(database);
-//
-//
-//    //Define the individual generator that returns an individual type of problem specific
-//    TravelingThiefIndividualBuilder * travelingThiefIndividualBuilder = new TravelingThiefIndividualBuilder(database);
-//
+    Parser * parser = new MachineTaskSchedulingParser();
+    MachineTaskSchedulingParser * machinetaskscheduling = dynamic_cast<MachineTaskSchedulingParser*>(parser);
+    machinetaskscheduling->setDatabase(database);
+
+    //Define the individual generator that returns an individual type of problem specific
+    MachineTaskSchedulingIndividualBuilder * machineTaskSchedulingIndividualBuilder = new MachineTaskSchedulingIndividualBuilder(database);
+
 //    //Instantiated a local search
 //    TravelingThiefLocalSearch* ls = new TravelingThiefLocalSearch();
 //    ls->setParser(travelingthiefparser);
