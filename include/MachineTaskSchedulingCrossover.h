@@ -14,6 +14,9 @@ class MachineTaskSchedulingCrossover : public Crossover
     protected:
 
     private:
+        void simpleCrossover(Individual * a, Individual * b);
+        //return if of machine responsible by the task of id 'task'
+        int getMachineOfTask(int task,MachineTaskSchedulingIndividual * ind);
 };
 
 #endif // MACHINETASKSCHEDULINGCROSSOVER_H

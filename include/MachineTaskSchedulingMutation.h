@@ -11,6 +11,13 @@ class MachineTaskSchedulingMutation
         virtual void mutate(Individual * s);
         virtual ~MachineTaskSchedulingMutation();
 
+
+        MachineTaskSchedulingIndividual * mutationTasks(MachineTaskSchedulingIndividual * s);
+
+        MachineTaskSchedulingIndividual * auxMutationTasks(MachineTaskSchedulingIndividual * s,int machine);
+
+
+
     protected:
 
     private:

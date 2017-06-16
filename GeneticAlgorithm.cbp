@@ -11,7 +11,7 @@
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc" />
-				<Option parameters="input/eil51_n150_uncorr_10.ttp 10 10 " />
+				<Option parameters="input/m3n9.txt 10 0" />
 				<Compiler>
 					<Add option="-O3" />
 					<Add option="-std=c++14" />

@@ -12,6 +12,7 @@
 #include "MachineTaskSchedulingIndividual.h"
 #include "MachineTaskSchedulingIndividualBuilder.h"
 #include "MachineTaskSchedulingParser.h"
+#include "MachineTaskSchedulingCrossover.h"
 
 using namespace std;
 
@@ -47,7 +48,21 @@ int main(int argc, char * argv[]) {
 
     //Define the individual generator that returns an individual type of problem specific
     MachineTaskSchedulingIndividualBuilder * machineTaskSchedulingIndividualBuilder = new MachineTaskSchedulingIndividualBuilder(database);
-    auto i = machineTaskSchedulingIndividualBuilder->generateIndividuo();
+
+
+    // Set searchEngine parameters
+    SearchEngine * searcher = new SearchEngine();
+    searcher->setParser(parser);
+    //searcher->setMutation();
+    //searcher->setCrossover();
+
+    Individual * a[2];
+    a[0] = machineTaskSchedulingIndividualBuilder->generateIndividuo();
+    a[1] = machineTaskSchedulingIndividualBuilder->generateIndividuo();
+    MachineTaskSchedulingCrossover * cross = new MachineTaskSchedulingCrossover();
+    cross->cross(a,2);
+
+
 //    //Instantiated a local search
 //    TravelingThiefLocalSearch* ls = new TravelingThiefLocalSearch();
 //    ls->setParser(travelingthiefparser);
