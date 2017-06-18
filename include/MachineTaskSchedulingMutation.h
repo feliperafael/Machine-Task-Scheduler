@@ -13,9 +13,7 @@ class MachineTaskSchedulingMutation
 
 
         MachineTaskSchedulingIndividual * mutationTasks(MachineTaskSchedulingIndividual * s);
-
-        MachineTaskSchedulingIndividual * auxMutationTasks(MachineTaskSchedulingIndividual * s,int machine);
-
+        MachineTaskSchedulingIndividual * mutationMachine(MachineTaskSchedulingIndividual * s);
 
 
     protected:

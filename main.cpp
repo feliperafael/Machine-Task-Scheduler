@@ -13,6 +13,7 @@
 #include "MachineTaskSchedulingIndividualBuilder.h"
 #include "MachineTaskSchedulingParser.h"
 #include "MachineTaskSchedulingCrossover.h"
+#include "MachineTaskSchedulingMutation.h"
 
 using namespace std;
 
@@ -60,7 +61,11 @@ int main(int argc, char * argv[]) {
     a[0] = machineTaskSchedulingIndividualBuilder->generateIndividuo();
     a[1] = machineTaskSchedulingIndividualBuilder->generateIndividuo();
     MachineTaskSchedulingCrossover * cross = new MachineTaskSchedulingCrossover();
-    cross->cross(a,2);
+    //cross->cross(a,2);
+    MachineTaskSchedulingMutation * mut = new MachineTaskSchedulingMutation();
+    mut->mutate(a[0]);
+    cout << endl << endl;
+    a[0]->print();
 
 
 //    //Instantiated a local search
