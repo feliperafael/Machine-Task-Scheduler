@@ -1,0 +1,2 @@
+void MachineTaskSchedulingIndividual::calculateTimes(Database *data) 
+ ///need delete old vectors if they exist

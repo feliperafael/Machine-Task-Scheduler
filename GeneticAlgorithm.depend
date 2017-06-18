@@ -1617,7 +1617,7 @@
 
 1497758269 /home/felipe/Documentos/github/MachineTaskScheduler/include/Task.h
 
-1497757965 source:/home/felipe/Documentos/github/MachineTaskScheduler/main.cpp
+1497758760 source:/home/felipe/Documentos/github/MachineTaskScheduler/main.cpp
 	<iostream>
 	<stdlib.h>
 	<time.h>
@@ -1750,6 +1750,6 @@
 1496711473 source:/home/felipe/Documentos/github/MachineTaskScheduler/src/SimpleReplacement.cpp
 	"SimpleReplacement.h"
 
-1497758720 source:/home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingIndividual.cpp
+1497760286 source:/home/felipe/Documentos/github/MachineTaskScheduler/include/MachineTaskSchedulingIndividual.cpp
 	"MachineTaskSchedulingIndividual.h"
 

@@ -34,6 +34,20 @@ void MachineTaskSchedulingIndividual::create(Database* data) {
 
 void MachineTaskSchedulingIndividual::calculateTimes(Database *data) {
     MachineTaskSchedulingDatabase * database = dynamic_cast<MachineTaskSchedulingDatabase*>(data);
+
+    ///need delete old vectors if they exist
+    if(machinesAndTasksInit != NULL && machinesAndTasksEnd!=NULL){
+        for(int i = 0; i < totalMachines; i++){
+            //machinesAndTasksInit[i].erase(machinesAndTasksInit[i].begin(),machinesAndTasksInit[i].begin()+machinesAndTasksInit[i].size());
+            machinesAndTasksInit[i].clear();
+            machinesAndTasksEnd[i].clear();
+        }
+
+
+        delete []machinesAndTasksInit;
+        delete []machinesAndTasksEnd;
+
+    }
     machinesAndTasksInit = new vector<int>[totalMachines];
     machinesAndTasksEnd = new vector<int>[totalMachines];
 
