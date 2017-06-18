@@ -2,15 +2,14 @@
 #define MACHINETASKSCHEDULING_H
 
 
-class MachineTaskScheduling
-{
-    public:
-        MachineTaskScheduling();
-        virtual ~MachineTaskScheduling();
+class MachineTaskScheduling {
+public:
+    MachineTaskScheduling();
+    virtual ~MachineTaskScheduling();
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // MACHINETASKSCHEDULING_H

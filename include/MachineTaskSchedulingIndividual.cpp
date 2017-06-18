@@ -1,15 +1,14 @@
 #include "MachineTaskSchedulingIndividual.h"
 
-MachineTaskSchedulingIndividual::MachineTaskSchedulingIndividual()
-{
+MachineTaskSchedulingIndividual::MachineTaskSchedulingIndividual() {
 
 }
 
-string MachineTaskSchedulingIndividual::nameIndividual(){
+string MachineTaskSchedulingIndividual::nameIndividual() {
     return "MachineTaskSchedulingIndividual";
 };
 
-void MachineTaskSchedulingIndividual::create(Database* data){
+void MachineTaskSchedulingIndividual::create(Database* data) {
     MachineTaskSchedulingDatabase* database = dynamic_cast<MachineTaskSchedulingDatabase*>(data);
 
     totalMachines = database->totalMachines;
@@ -18,13 +17,13 @@ void MachineTaskSchedulingIndividual::create(Database* data){
     machinesAndTasksIndex = new vector<int>[totalMachines];
 
     int tasks_vec[totalTasks];
-    for(int i = 0; i < totalTasks; i++){
+    for(int i = 0; i < totalTasks; i++) {
         tasks_vec[i] = i;
     }
     random_shuffle(tasks_vec,tasks_vec + totalTasks);
 
     /**---------------------------------------------------------**/
-    for(int i = 0; i < totalTasks; ++i){
+    for(int i = 0; i < totalTasks; ++i) {
         int machine = rand() % totalMachines;
         machinesAndTasksIndex[machine].push_back(tasks_vec[i]);
 
@@ -33,17 +32,17 @@ void MachineTaskSchedulingIndividual::create(Database* data){
     print();
 }
 
-void MachineTaskSchedulingIndividual::calculateTimes(MachineTaskSchedulingDatabase *database){
+void MachineTaskSchedulingIndividual::calculateTimes(Database *data) {
+    MachineTaskSchedulingDatabase * database = dynamic_cast<MachineTaskSchedulingDatabase*>(data);
     machinesAndTasksInit = new vector<int>[totalMachines];
     machinesAndTasksEnd = new vector<int>[totalMachines];
 
-    for(int machine = 0; machine < totalMachines;++machine){
-         for(int i = 0; i < machinesAndTasksIndex[machine].size(); ++i){
-            if(i == 0){
+    for(int machine = 0; machine < totalMachines; ++machine) {
+        for(int i = 0; i < machinesAndTasksIndex[machine].size(); ++i) {
+            if(i == 0) {
                 machinesAndTasksInit[machine].push_back(0);
                 machinesAndTasksEnd[machine].push_back(database->timeMachineTask[machinesAndTasksIndex[machine].at(0)][machine]);
-            }
-            else{
+            } else {
                 int time = machinesAndTasksEnd[machine].at(i - 1);
                 time += database->preparingTime[machine][machinesAndTasksIndex[machine].at(i - 1)][machinesAndTasksIndex[machine].at(i)];
                 machinesAndTasksInit[machine].push_back(time);
@@ -54,15 +53,15 @@ void MachineTaskSchedulingIndividual::calculateTimes(MachineTaskSchedulingDataba
     }
 }
 
-Individual* MachineTaskSchedulingIndividual::clone(){
+Individual* MachineTaskSchedulingIndividual::clone() {
     MachineTaskSchedulingIndividual * s = new MachineTaskSchedulingIndividual();
 
     s->totalMachines = totalMachines;
     s->totalTasks = totalTasks;
     s->machinesAndTasksIndex = new vector<int>[totalMachines];
 
-    for(int i = 0; i < totalMachines; i++){
-        for(int j = 0; j < machinesAndTasksIndex[i].size(); j++){
+    for(int i = 0; i < totalMachines; i++) {
+        for(int j = 0; j < machinesAndTasksIndex[i].size(); j++) {
             s->machinesAndTasksIndex[i].push_back(machinesAndTasksIndex[i].at(j));
 //            s->machinesAndTasksInit[i].push_back(machinesAndTasksInit[i].at(j));
 //            s->machinesAndTasksEnd[i].push_back(machinesAndTasksEnd[i].at(j));
@@ -72,8 +71,8 @@ Individual* MachineTaskSchedulingIndividual::clone(){
     return s;
 }
 
-void MachineTaskSchedulingIndividual::print(){
-    for(int i = 0; i < totalMachines; i++){
+void MachineTaskSchedulingIndividual::print() {
+    for(int i = 0; i < totalMachines; i++) {
         cout << "M" << i << " = ";
         for(int j = 0; j < machinesAndTasksIndex[i].size(); j++)
             cout << machinesAndTasksIndex[i].at(j) << "[" << machinesAndTasksInit[i].at(j) << ", " << machinesAndTasksEnd[i].at(j) << "] -> ";
@@ -81,7 +80,6 @@ void MachineTaskSchedulingIndividual::print(){
     }
 }
 
-MachineTaskSchedulingIndividual::~MachineTaskSchedulingIndividual()
-{
+MachineTaskSchedulingIndividual::~MachineTaskSchedulingIndividual() {
     //dtor
 }

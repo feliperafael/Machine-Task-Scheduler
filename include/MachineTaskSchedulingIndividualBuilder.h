@@ -6,19 +6,18 @@
 #include "MachineTaskSchedulingIndividual.h"
 #include "MachineTaskSchedulingDatabase.h"
 
-class MachineTaskSchedulingIndividualBuilder
-{
-    public:
-        MachineTaskSchedulingDatabase * database;
-        MachineTaskSchedulingIndividualBuilder(Database * database);
-        virtual ~MachineTaskSchedulingIndividualBuilder();
+class MachineTaskSchedulingIndividualBuilder {
+public:
+    MachineTaskSchedulingDatabase * database;
+    MachineTaskSchedulingIndividualBuilder(Database * database);
+    virtual ~MachineTaskSchedulingIndividualBuilder();
 
-        Individual * generateIndividuo();
-        string nameIndividuo();
+    Individual * generateIndividuo();
+    string nameIndividuo();
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // MACHINETASKSCHEDULINGINDIVIDUALBUILDER_H

@@ -4,21 +4,20 @@
 #include "MachineTaskSchedulingIndividual.h"
 #include "Mutation.h"
 
-class MachineTaskSchedulingMutation
-{
-    public:
-        MachineTaskSchedulingMutation();
-        virtual void mutate(Individual * s);
-        virtual ~MachineTaskSchedulingMutation();
+class MachineTaskSchedulingMutation {
+public:
+    MachineTaskSchedulingMutation();
+    virtual void mutate(Individual * s);
+    virtual ~MachineTaskSchedulingMutation();
 
 
-        MachineTaskSchedulingIndividual * mutationTasks(MachineTaskSchedulingIndividual * s);
-        MachineTaskSchedulingIndividual * mutationMachine(MachineTaskSchedulingIndividual * s);
+    MachineTaskSchedulingIndividual * mutationTasks(MachineTaskSchedulingIndividual * s);
+    MachineTaskSchedulingIndividual * mutationMachine(MachineTaskSchedulingIndividual * s);
 
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // MACHINETASKSCHEDULINGMUTATION_H

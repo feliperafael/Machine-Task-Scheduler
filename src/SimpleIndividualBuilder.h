@@ -5,16 +5,16 @@
 #include "SimpleIndividual.h"
 
 class SimpleIndividualBuilder : public IndividualBuilder {
-  public:
+public:
     SimpleIndividualBuilder();
     virtual ~SimpleIndividualBuilder();
     virtual Individual * generateIndividuo();
     virtual string nameIndividuo();
 
 
-  protected:
+protected:
 
-  private:
+private:
 };
 
 #endif // SIMPLEINDIVIDUALBUILDER_H

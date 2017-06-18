@@ -5,21 +5,20 @@
 #include "MachineTaskSchedulingIndividual.h"
 #include "MachineTaskSchedulingDatabase.h"
 
-class MachineTaskSchedulingParser : public Parser
-{
-    public:
-        MachineTaskSchedulingParser();
-        virtual ~MachineTaskSchedulingParser();
+class MachineTaskSchedulingParser : public Parser {
+public:
+    MachineTaskSchedulingParser();
+    virtual ~MachineTaskSchedulingParser();
 
-        double Evaluate(Individual* s);
-        string nameParser();
-        void setDatabase(Database* data);
+    double Evaluate(Individual* s);
+    string nameParser();
+    void setDatabase(Database* data);
 
-        MachineTaskSchedulingDatabase* database;
+    MachineTaskSchedulingDatabase* database;
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // MACHINETASKSCHEDULINGPARSER_H

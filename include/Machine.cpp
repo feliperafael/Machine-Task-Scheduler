@@ -1,11 +1,9 @@
 #include "Machine.h"
 
-Machine::Machine()
-{
+Machine::Machine() {
     //ctor
 }
 
-Machine::~Machine()
-{
+Machine::~Machine() {
     //dtor
 }

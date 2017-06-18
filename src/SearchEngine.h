@@ -19,7 +19,7 @@
 #include "LocalSearch.h"
 
 class SearchEngine {
-  public:
+public:
     Individual ** population;
     IndividualBuilder * individualBuilder;
     Parser * parser;
@@ -46,9 +46,9 @@ class SearchEngine {
     void setSelection(IndividualSelector * seletor);
     void setLocalSearch(LocalSearch * localSearch);
 
-  protected:
+protected:
 
-  private:
+private:
     void EvaluatePopulation(int initialIndex, int finalIndex);
     static bool sortPopulationByFitness(Individual* a, Individual* b);
     void createsInitialPopulation();

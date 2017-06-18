@@ -59,11 +59,11 @@ void SearchEngine::Evolve() {
         }
 
         //aumentar a variabilidade genetica
-        if(generationsWithoutImprovement > conf->max_generationsWithoutImprovement){
+        if(generationsWithoutImprovement > conf->max_generationsWithoutImprovement) {
             decimatePopulation();
             //cout << "Population was decimated" << endl;
             generationsWithoutImprovement=0;
-           // break;
+            // break;
         }
         //cout << it << " " << population[0]->fitness <<  endl;
         if(omp_get_wtime() - time_init > conf->MAX_TIME)
@@ -75,8 +75,8 @@ void SearchEngine::Evolve() {
 
 }
 
-void SearchEngine::decimatePopulation(){
-    for(int i = conf->elitism*conf->popSize; i < conf->popSize; i++){
+void SearchEngine::decimatePopulation() {
+    for(int i = conf->elitism*conf->popSize; i < conf->popSize; i++) {
         delete population[i];
         population[i] = individualBuilder->generateIndividuo();
         parser->Evaluate(population[i]);

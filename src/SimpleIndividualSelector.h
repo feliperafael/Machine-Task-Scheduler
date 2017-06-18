@@ -5,14 +5,14 @@
 #include "IndividualSelector.h"
 
 class SimpleIndividualSelector : public IndividualSelector {
-  public:
+public:
     SimpleIndividualSelector();
     virtual Individual * selects(Individual ** pop);
     virtual ~SimpleIndividualSelector();
 
-  protected:
+protected:
 
-  private:
+private:
 };
 
 #endif // SIMPLEINDIVIDUALSELECTOR_H

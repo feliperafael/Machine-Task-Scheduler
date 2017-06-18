@@ -4,14 +4,14 @@
 #include "Individual.h"
 
 class IndividualSelector {
-  public:
+public:
     IndividualSelector();
     virtual Individual * selects(Individual ** pop) = 0;
     virtual ~IndividualSelector();
 
-  protected:
+protected:
 
-  private:
+private:
 };
 
 #endif // INDIVIDUALSELECTOR_H

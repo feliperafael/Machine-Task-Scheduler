@@ -5,7 +5,7 @@
 #include <algorithm>    // std::sort
 
 class SimpleReplacement : public PopulationReplacement {
-  public:
+public:
     SimpleReplacement();
 
     /**
@@ -16,9 +16,9 @@ class SimpleReplacement : public PopulationReplacement {
 
     virtual ~SimpleReplacement();
 
-  protected:
+protected:
 
-  private:
+private:
     static bool SortMyPop(Individual* a, Individual* b);
 };
 

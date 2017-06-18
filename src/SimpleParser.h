@@ -8,7 +8,7 @@
 
 
 class SimpleParser : public Parser {
-  public:
+public:
     Database * database;
     SimpleParser();
     virtual ~SimpleParser();
@@ -17,9 +17,9 @@ class SimpleParser : public Parser {
     virtual string nameParser();
     void setDatabase(Database * data);
 
-  protected:
+protected:
 
-  private:
+private:
 };
 
 #endif // SIMPLEPARSER_H

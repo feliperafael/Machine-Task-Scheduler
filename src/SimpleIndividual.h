@@ -7,7 +7,7 @@
 using namespace std;
 
 class SimpleIndividual : public Individual {
-  public:
+public:
     double x;
     bool a;
     SimpleIndividual();
@@ -18,9 +18,9 @@ class SimpleIndividual : public Individual {
 
     virtual ~SimpleIndividual();
 
-  protected:
+protected:
 
-  private:
+private:
 };
 
 #endif // SIMPLEINDIVIDUAL_H

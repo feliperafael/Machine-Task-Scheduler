@@ -1,11 +1,9 @@
 #include "MachineTaskScheduling.h"
 
-MachineTaskScheduling::MachineTaskScheduling()
-{
+MachineTaskScheduling::MachineTaskScheduling() {
     //ctor
 }
 
-MachineTaskScheduling::~MachineTaskScheduling()
-{
+MachineTaskScheduling::~MachineTaskScheduling() {
     //dtor
 }

@@ -5,7 +5,7 @@
 #include "Individual.h"
 
 class Parser {
-  public:
+public:
     Parser();
 
     virtual double Evaluate(Individual* s) = 0;
@@ -13,9 +13,9 @@ class Parser {
 
     virtual ~Parser();
 
-  protected:
+protected:
 
-  private:
+private:
 };
 
 #endif // PARSER_H

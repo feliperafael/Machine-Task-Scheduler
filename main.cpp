@@ -67,6 +67,12 @@ int main(int argc, char * argv[]) {
     cout << endl << endl;
     a[0]->print();
 
+    cout << endl << endl;
+    MachineTaskSchedulingIndividual * s = dynamic_cast<MachineTaskSchedulingIndividual*>(a[0]);
+    s->calculateTimes(database);
+
+    s->print();
+
 
 //    //Instantiated a local search
 //    TravelingThiefLocalSearch* ls = new TravelingThiefLocalSearch();

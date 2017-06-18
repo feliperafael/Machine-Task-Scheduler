@@ -7,7 +7,7 @@
 using namespace std;
 
 class Individual {
-  public:
+public:
     double fitness;
 
     Individual();
@@ -18,9 +18,9 @@ class Individual {
 
     virtual ~Individual();
 
-  protected:
+protected:
 
-  private:
+private:
 };
 
 #endif // INDIVIDUAL_H

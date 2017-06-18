@@ -2,15 +2,14 @@
 #define TASK_H
 
 
-class Task
-{
-    public:
-        Task();
-        virtual ~Task();
+class Task {
+public:
+    Task();
+    virtual ~Task();
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // TASK_H

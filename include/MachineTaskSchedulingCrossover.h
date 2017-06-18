@@ -4,19 +4,18 @@
 #include "MachineTaskSchedulingIndividual.h"
 #include "Crossover.h"
 
-class MachineTaskSchedulingCrossover : public Crossover
-{
-    public:
-        MachineTaskSchedulingCrossover();
-        void cross(Individual ** vec_individuos, int num_individuos);
-        virtual ~MachineTaskSchedulingCrossover();
+class MachineTaskSchedulingCrossover : public Crossover {
+public:
+    MachineTaskSchedulingCrossover();
+    void cross(Individual ** vec_individuos, int num_individuos);
+    virtual ~MachineTaskSchedulingCrossover();
 
-    protected:
+protected:
 
-    private:
-        void simpleCrossover(Individual * a, Individual * b);
-        //return if of machine responsible by the task of id 'task'
-        int getMachineOfTask(int task,MachineTaskSchedulingIndividual * ind);
+private:
+    void simpleCrossover(Individual * a, Individual * b);
+    //return if of machine responsible by the task of id 'task'
+    int getMachineOfTask(int task,MachineTaskSchedulingIndividual * ind);
 };
 
 #endif // MACHINETASKSCHEDULINGCROSSOVER_H

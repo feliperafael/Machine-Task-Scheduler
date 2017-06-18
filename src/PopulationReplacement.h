@@ -4,16 +4,16 @@
 #include "Individual.h"
 
 class PopulationReplacement {
-  public:
-    PopulationReplacement();
+    public:
+        PopulationReplacement();
 
-    virtual void Replace(Individual **pop) = 0;
+        virtual void Replace(Individual **pop) = 0;
 
-    virtual ~PopulationReplacement();
+        virtual ~PopulationReplacement();
 
-  protected:
+    protected:
 
-  private:
+    private:
 };
 
 #endif // POPULATIONREPLACEMENT_H

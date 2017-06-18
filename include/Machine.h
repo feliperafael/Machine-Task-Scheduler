@@ -5,15 +5,14 @@
 #include "Task.h"
 
 using namespace std;
-class Machine
-{
-    public:
-        Machine();
-        virtual ~Machine();
+class Machine {
+public:
+    Machine();
+    virtual ~Machine();
 
-    protected:
+protected:
 
-    private:
+private:
 };
 
 #endif // MACHINE_H

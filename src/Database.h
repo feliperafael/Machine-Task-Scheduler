@@ -7,7 +7,7 @@
 using namespace std;
 
 class Database {
-  public:
+public:
     double **values;
     int registros;
     int variaveis;
@@ -21,9 +21,9 @@ class Database {
 
     virtual ~Database();
 
-  protected:
+protected:
 
-  private:
+private:
 };
 
 #endif // DATABASE_H

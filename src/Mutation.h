@@ -3,14 +3,14 @@
 #include "Individual.h"
 
 class Mutation {
-  public:
+public:
     Mutation();
     virtual void mutate(Individual * individuo) = 0;
     virtual ~Mutation();
 
-  protected:
+protected:
 
-  private:
+private:
 };
 
 #endif // MUTATION_H

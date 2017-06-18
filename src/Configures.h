@@ -3,7 +3,7 @@
 
 
 class Configures {
-  public:
+public:
     Configures();
 
     int seed;
@@ -30,9 +30,9 @@ class Configures {
 
     virtual ~Configures();
 
-  protected:
+protected:
 
-  private:
+private:
 };
 
 extern Configures * conf;
