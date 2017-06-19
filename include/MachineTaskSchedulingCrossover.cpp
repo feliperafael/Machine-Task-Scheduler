@@ -1,54 +1,94 @@
 #include "MachineTaskSchedulingCrossover.h"
 
-MachineTaskSchedulingCrossover::MachineTaskSchedulingCrossover()
-{
+MachineTaskSchedulingCrossover::MachineTaskSchedulingCrossover() {
     //ctor
 }
 
-void MachineTaskSchedulingCrossover::cross(Individual ** vec_individuos, int num_individuos){
+void MachineTaskSchedulingCrossover::cross(Individual ** vec_individuos, int num_individuos) {
     //simple crossover com 2 individuos
     simpleCrossover(vec_individuos[0],vec_individuos[1]);
 }
 // esse cruzamento ta uma porra kkk tudo errado...
-void MachineTaskSchedulingCrossover::simpleCrossover(Individual * a, Individual * b){
+void MachineTaskSchedulingCrossover::simpleCrossover(Individual * a, Individual * b) {
 
     //Individuals 'a' and 'b' that are the same number of machines
     MachineTaskSchedulingIndividual * ind_1 = dynamic_cast<MachineTaskSchedulingIndividual*>(a);
     MachineTaskSchedulingIndividual * ind_2 = dynamic_cast<MachineTaskSchedulingIndividual*>(b);
 
+    //vec {[machina,task];[machina,task];[machina,task]}
+    int vec_a[ind_1->totalTasks*2];
+    int vec_b[ind_2->totalTasks*2];
 
-    int random_machine = rand()%ind_1->totalMachines;
-    cout << "num_machines " << ind_1->totalMachines << endl;
+    for(int i = 0; i < ind_1->totalTasks*2;i++){
+        vec_a[i] = -1;
+    }
+    for(int i = 0; i < ind_2->totalTasks*2;i++){
+        vec_b[i] = -1;
+    }
+    int cont = 0;
+    for(int i = 0; i < ind_1->totalMachines; i++){
 
-    int num_tasks = ind_1->machinesAndTasksInit[random_machine].size();
-    cout << "num_tasks " << num_tasks << " of machine " << random_machine  << endl;
+        for(int j = 0; j < ind_1->machinesAndTasksIndex[i].size();j++){
+            vec_a[cont] = i;
+            vec_a[cont+1] = ind_1->machinesAndTasksIndex[i][j];
+        }
+        cont+=2;
+    }
 
-    int random_task = rand()%num_tasks;
-    cout << "random_task " << random_task << endl;
+    cout << "VEC A \n\n\n";
+    for(int i = 0; i < ind_1->totalTasks*2;i+=2){
+        cout << "[ " << vec_a[i] << " , " << vec_a[i+1] << " ] => ";
+    }
 
-    int index = ind_1->machinesAndTasksIndex[random_machine][random_task];
+    int cont_1 = 0;
+    for(int i = 0; i < ind_2->totalMachines; i++){
 
-    cout << " index " << index << endl;
-    int index_machine_ind_2 = getMachineOfTask(index,ind_2);
+        for(int j = 0; j < ind_2->machinesAndTasksIndex[i].size();j++){
+            vec_b[cont_1] = i;
+            vec_b[cont_1+1] = ind_2->machinesAndTasksIndex[i][j];
+        }
+        cont_1+=2;
+    }
 
-    swap(ind_1->machinesAndTasksEnd[random_machine][index],ind_2->machinesAndTasksEnd[index_machine_ind_2][index]);
-    swap(ind_1->machinesAndTasksIndex[random_machine][index],ind_2->machinesAndTasksIndex[index_machine_ind_2][index]);
-    swap(ind_1->machinesAndTasksInit[random_machine][index],ind_2->machinesAndTasksInit[index_machine_ind_2][index]);
+    cout << "VEC B \n\n\n";
+    for(int i = 0; i < ind_2->totalTasks*2;i+=2){
+        cout << "[ " << vec_b[i] << " , " << vec_b[i+1] << " ] => ";
+    }
 
-//    swap(ind_1->machinesAndTasksIndex[luck],ind_2->machinesAndTasksIndex[luck]);
-//    swap(ind_1->machinesAndTasksInit[luck],ind_2->machinesAndTasksInit[luck]);
-//
-    cout << "\n\nind_1\n";
-    ind_1->print();
-    cout << "\nind_2\n";
-    ind_2->print();
+    int random_task = rand()%ind_1->totalTasks;
+
+    for(int i = random_task*2; i < ind_1->totalTasks*2;i+=2){
+        if(vec_a[i] != -1 && vec_b[i] != -1){
+            swap(ind_1->machinesAndTasksIndex[vec_a[i],vec_a[i+1]],ind_2->machinesAndTasksIndex[vec_b[i],vec_b[i+1]]);
+        }
+    }
+    int i = random_task*2;
+    int j = i;
+    while(1){
+        if(vec_a[i] != -1 && vec_b[j] != -1){
+            if(taskAlreadyExists(i,vec_a[i], vec_b)==false){
+                swap(ind_1->machinesAndTasksIndex[i][j],ind_2->machinesAndTasksIndex[i][j]);
+            }
+        }
+        i+=2;
+        j+=2;
+    }
 
 }
+//verifica se uma tarefa ja existe em um vetor
+bool MachineTaskSchedulingCrossover::taskAlreadyExists(int index_max, int task, int vec[]){
+    for(int i = 0; i < index_max; i++){
+        if(vec[i] == task){
+            return true;
+        }
+    }
+    return false;
+}
 
-int MachineTaskSchedulingCrossover::getMachineOfTask(int task,MachineTaskSchedulingIndividual * ind){
-    for( int i = 0; i < ind->totalMachines; i++ ){
-        for( int j = 0; j < ind->machinesAndTasksIndex[i].size(); j++ ){
-            if(task == ind->machinesAndTasksIndex[i][j]){
+int MachineTaskSchedulingCrossover::getMachineOfTask(int task,MachineTaskSchedulingIndividual * ind) {
+    for( int i = 0; i < ind->totalMachines; i++ ) {
+        for( int j = 0; j < ind->machinesAndTasksIndex[i].size(); j++ ) {
+            if(task == ind->machinesAndTasksIndex[i][j]) {
                 //cout << "machine " << i << " task " << j << "task "<< ind->machinesAndTasksIndex[i][j] << endl;
                 return i;
             }
@@ -58,7 +98,6 @@ int MachineTaskSchedulingCrossover::getMachineOfTask(int task,MachineTaskSchedul
 
 }
 
-MachineTaskSchedulingCrossover::~MachineTaskSchedulingCrossover()
-{
+MachineTaskSchedulingCrossover::~MachineTaskSchedulingCrossover() {
     //dtor
 }

@@ -58,20 +58,28 @@ int main(int argc, char * argv[]) {
     //searcher->setCrossover();
 
     Individual * a[2];
+    //Individual * a = machineTaskSchedulingIndividualBuilder->generateIndividuo();
     a[0] = machineTaskSchedulingIndividualBuilder->generateIndividuo();
     a[1] = machineTaskSchedulingIndividualBuilder->generateIndividuo();
     MachineTaskSchedulingCrossover * cross = new MachineTaskSchedulingCrossover();
-    //cross->cross(a,2);
-    MachineTaskSchedulingMutation * mut = new MachineTaskSchedulingMutation();
-    mut->mutate(a[0]);
+    cross->cross(a,2);
+    //MachineTaskSchedulingMutation * mut = new MachineTaskSchedulingMutation();
+    //mut->mutate(a);
     cout << endl << endl;
-    a[0]->print();
+    //a[0]->print();
+    //a->print();
+
 
     cout << endl << endl;
-    MachineTaskSchedulingIndividual * s = dynamic_cast<MachineTaskSchedulingIndividual*>(a[0]);
-    s->calculateTimes(database);
+//    MachineTaskSchedulingIndividual * s = dynamic_cast<MachineTaskSchedulingIndividual*>(a[0]);
+     MachineTaskSchedulingIndividual * s1 = dynamic_cast<MachineTaskSchedulingIndividual*>(a[0]);
+     MachineTaskSchedulingIndividual * s2 = dynamic_cast<MachineTaskSchedulingIndividual*>(a[1]);
 
-    s->print();
+    //s->calculateTimes(database);
+
+    s1->print();
+    cout << endl;
+    s2->print();
 
 
 //    //Instantiated a local search

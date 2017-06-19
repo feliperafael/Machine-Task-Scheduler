@@ -18,13 +18,15 @@ MachineTaskSchedulingIndividual * MachineTaskSchedulingMutation::mutationTasks(M
     int random_machine_a = rand()%s->totalMachines;
     int random_machine_b = rand()%s->totalMachines;
 
-    int random_task_a = rand()%s->machinesAndTasksInit[random_machine_a].size();
-    int random_task_b = rand()%s->machinesAndTasksInit[random_machine_b].size();
+    int max_a = s->machinesAndTasksInit[random_machine_a].size();
+    int max_b = s->machinesAndTasksInit[random_machine_b].size();
 
-    //necessario dar todos swaps? sim...
-    swap(s->machinesAndTasksEnd[random_machine_a][random_task_a],s->machinesAndTasksEnd[random_machine_b][random_task_b]);
-    swap(s->machinesAndTasksIndex[random_machine_a][random_task_a],s->machinesAndTasksIndex[random_machine_b][random_task_b]);
-    swap(s->machinesAndTasksInit[random_machine_a][random_task_a],s->machinesAndTasksInit[random_machine_b][random_task_b]);
+    if(max_a > 0 && max_b > 0){
+        int random_task_a = rand()% max_a;
+        int random_task_b = rand()% max_b;
+
+        swap(s->machinesAndTasksIndex[random_machine_a][random_task_a],s->machinesAndTasksIndex[random_machine_b][random_task_b]);
+    }
 
     return s;
 }
@@ -33,9 +35,7 @@ MachineTaskSchedulingIndividual * MachineTaskSchedulingMutation::mutationMachine
     int random_machine_a = rand()%s->totalMachines;
     int random_machine_b = rand()%s->totalMachines;
 
-    swap(s->machinesAndTasksEnd[random_machine_a],s->machinesAndTasksEnd[random_machine_b]);
     swap(s->machinesAndTasksIndex[random_machine_a],s->machinesAndTasksIndex[random_machine_b]);
-    swap(s->machinesAndTasksInit[random_machine_a],s->machinesAndTasksInit[random_machine_b]);
 
     return s;
 }
