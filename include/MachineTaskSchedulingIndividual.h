@@ -17,6 +17,11 @@ public:
     void create(Database* data);
     void calculateTimes(Database *data);
     void print();
+    void insertIdleTime(MachineTaskSchedulingDatabase* data);
+
+    int removeTask(int t);
+    void insertTask(int t, int p);
+    void swapTasks(int t, int p);
 
     vector<int>* machinesAndTasksIndex;
     vector<int>* machinesAndTasksInit;
@@ -25,9 +30,9 @@ public:
     int totalMachines;
     int totalTasks;
 
-protected:
+    protected:
 
-private:
+    private:
 };
 
 #endif // MACHINETASKSCHEDULINGINDIVIDUAL_H

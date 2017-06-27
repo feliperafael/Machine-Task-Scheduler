@@ -9,7 +9,6 @@ void MachineTaskSchedulingMutation::mutate(Individual * s) {
     MachineTaskSchedulingIndividual * s1 = dynamic_cast<MachineTaskSchedulingIndividual*>(s);
 
     mutationTasks(s1);
-
 }
 
 
@@ -18,8 +17,8 @@ MachineTaskSchedulingIndividual * MachineTaskSchedulingMutation::mutationTasks(M
     int random_machine_a = rand()%s->totalMachines;
     int random_machine_b = rand()%s->totalMachines;
 
-    int max_a = s->machinesAndTasksInit[random_machine_a].size();
-    int max_b = s->machinesAndTasksInit[random_machine_b].size();
+    int max_a = s->machinesAndTasksIndex[random_machine_a].size();
+    int max_b = s->machinesAndTasksIndex[random_machine_b].size();
 
     if(max_a > 0 && max_b > 0){
         int random_task_a = rand()% max_a;

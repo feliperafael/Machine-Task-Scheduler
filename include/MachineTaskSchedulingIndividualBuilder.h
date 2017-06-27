@@ -6,7 +6,7 @@
 #include "MachineTaskSchedulingIndividual.h"
 #include "MachineTaskSchedulingDatabase.h"
 
-class MachineTaskSchedulingIndividualBuilder {
+class MachineTaskSchedulingIndividualBuilder : public IndividualBuilder {
 public:
     MachineTaskSchedulingDatabase * database;
     MachineTaskSchedulingIndividualBuilder(Database * database);

@@ -33,6 +33,16 @@ void MachineTaskSchedulingDatabase::loadBase(string databaseName) {
     for(int i = 0; i < totalTasks; i++) {
         file >> deadline[i];
     }
+
+    advance = new int[totalTasks];
+    for(int i = 0; i < totalTasks; i++) {
+        file >> advance[i];
+    }
+
+    delay = new int[totalTasks];
+    for(int i = 0; i < totalTasks; i++) {
+        file >> delay[i];
+    }
 }
 
 void MachineTaskSchedulingDatabase::print() {

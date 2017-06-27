@@ -7,7 +7,9 @@
 class LocalSearch {
 public:
     LocalSearch();
-    virtual Individual* doLocalSearch(Individual* s1) = 0;
+    virtual Individual* doLocalSearch(Individual* s1){
+        return s1;
+    };
     virtual ~LocalSearch();
 
     void setParser(Parser* parser);

@@ -14,6 +14,7 @@ protected:
 
 private:
     void simpleCrossover(Individual * a, Individual * b);
+    void PathRelinking(Individual* a, Individual* b);
     //return if of machine responsible by the task of id 'task'
     int getMachineOfTask(int task,MachineTaskSchedulingIndividual * ind);
 

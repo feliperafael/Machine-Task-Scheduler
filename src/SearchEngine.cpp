@@ -7,6 +7,7 @@ SearchEngine::SearchEngine() {
     setMutation(NULL);
     setCrossover(NULL);
     setSelection(NULL);
+    setLocalSearch(NULL);
 }
 
 void SearchEngine::Evolve() {
@@ -33,13 +34,13 @@ void SearchEngine::Evolve() {
             Note that the local search already evaluates a solution,
             not requiring an evaluation when a local search occurs
         **/
-        ///Local Search
-        if(it%conf->localSearchWindow == 0) {
-            doLocalSearch(conf->popSize, conf->popSize * 2);
-        } else {
-            //Evaluates new population
+//        ///Local Search
+        if(it%conf->localSearchWindow == 0)
+            doLocalSearch(0, conf->popSize * 2);
+//        } else {
+//            //Evaluates new population
+//        }
             EvaluatePopulation(conf->popSize, conf->popSize * 2);
-        }
 
         //Replaces the population
         replacer->Replace(population);
@@ -65,6 +66,9 @@ void SearchEngine::Evolve() {
             generationsWithoutImprovement=0;
             // break;
         }
+
+//        cout << population[0]->fitness << endl;
+
         //cout << it << " " << population[0]->fitness <<  endl;
         if(omp_get_wtime() - time_init > conf->MAX_TIME)
             break;
@@ -142,7 +146,7 @@ void SearchEngine::doLocalSearch(int initialIndex, int finalIndex) {
     }
 }
 bool SearchEngine::sortPopulationByFitness(Individual* a, Individual* b) {
-    return a->fitness > b->fitness;
+    return a->fitness < b->fitness;
 }
 
 /**
@@ -200,7 +204,11 @@ void SearchEngine::setPopulationReplace(PopulationReplacement * popReplace) {
 }
 
 void SearchEngine::setLocalSearch(LocalSearch * localSearch) {
-    this->localSearch = localSearch;
+    if(localSearch == NULL) {
+        this->localSearch = new LocalSearch();
+    } else {
+        this->localSearch = localSearch;
+    }
 }
 
 SearchEngine::~SearchEngine() {

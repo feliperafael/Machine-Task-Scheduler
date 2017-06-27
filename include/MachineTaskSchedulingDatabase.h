@@ -17,6 +17,8 @@ public:
     int** timeMachineTask; //time for task i be processed on a machine j (Pij)
     int*** preparingTime;  //time for preparing a machine i for process task k after task j (Skij)
     int* deadline;         //time for delivery a task i
+    int* advance;         //time for delivery a task i
+    int* delay;         //time for delivery a task i
 protected:
 
 private:

@@ -4,7 +4,7 @@
 #include "MachineTaskSchedulingIndividual.h"
 #include "Mutation.h"
 
-class MachineTaskSchedulingMutation {
+class MachineTaskSchedulingMutation : public Mutation {
 public:
     MachineTaskSchedulingMutation();
     virtual void mutate(Individual * s);

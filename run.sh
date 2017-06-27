@@ -1,21 +1,75 @@
 #!/bin/bash
 
-t=180
+path="input"
 
-for i in `seq 10 14`;
-do
-	./bin/Release/GeneticAlgorithm input/eil51-ttp/eil51_n50_bounded-strongly-corr_01.ttp 180 $i
-done
-echo input/eil51-ttp/eil51_n50_bounded-strongly-corr_01.ttp
+files="$path/m3/n20/m*"
+echo $files
 
-for i in `seq 10 14`;
+for file in $files;
 do
-	./bin/Release/GeneticAlgorithm input/eil51-ttp/eil51_n50_bounded-strongly-corr_02.ttp 180 $i
+	for seed in '10 19';
+	do
+		#echo $file
+		./bin/Release/GeneticAlgorithm $file 1 $seed
+	done
 done
-echo input/eil51-ttp/eil51_n50_bounded-strongly-corr_02.ttp
 
-for i in `seq 10 14`;
+files="$path/m3/n30/m*"
+echo $files
+
+for file in $files;
 do
-	./bin/Release/GeneticAlgorithm input/eil51-ttp/eil51_n50_bounded-strongly-corr_05.ttp 180 $i	
+	for seed in '10 19';
+	do
+		#echo $file
+		./bin/Release/GeneticAlgorithm $file 1 $seed
+	done	
 done
-echo input/eil51-ttp/eil51_n50_bounded-strongly-corr_05.ttp
+
+files="$path/m10/n50/m*"
+echo $files
+
+for file in $files;
+do
+	for seed in '10 19';
+	do
+		#echo $file
+		./bin/Release/GeneticAlgorithm $file 1 $seed
+	done	
+done
+
+files="$path/m10/n100/m*"
+echo $files
+
+for file in $files;
+do
+	for seed in '10 19';
+	do
+		#echo $file
+		./bin/Release/GeneticAlgorithm $file 1 $seed
+	done
+done
+
+files="$path/m20/n50/m*"
+echo $files
+
+for file in $files;
+do
+	for seed in '10 19';
+	do
+		#echo $file
+		./bin/Release/GeneticAlgorithm $file 1 $seed
+	done	
+done
+
+files="$path/m20/n100/m*"
+echo $files
+
+for file in $files;
+do
+	for seed in '10 19';
+	do
+		#echo $file
+		./bin/Release/GeneticAlgorithm $file 1 $seed
+	done	
+done
